@@ -1,0 +1,156 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 10px;
+}
+
+body{
+    font-family: 'Red Hat Text';
+    font-weight: 700;
+    background: linear-gradient(180deg, #1D1E28 0.12%, #261C2D 94.84%, #261A2D 100%);
+}
+
+main{
+    padding: 14.2rem 2.4rem 4.8rem 2.4rem;
+    min-width: 100vw;
+    min-height: 100vh;
+    flex-direction: column; 
+    align-items: center;
+    background-image: url(images/bg-stars.svg), url(images/pattern-hills.svg);
+    background-repeat: no-repeat, no-repeat;
+    background-position: right top, right bottom;
+}
+
+main, .container, .two-element, footer{
+    display: flex;
+}
+h1, .two-element, .number{
+    text-align: center;
+}
+
+ h1{
+    font-size: 1.8rem;
+    line-height: 2.4rem;
+    letter-spacing: 0.6rem;
+    text-transform: uppercase;
+    color: #FFFFFF;
+ }
+
+ .container{
+    min-width: 32.7rem;
+    flex-direction: row;
+    gap: 1.6rem;
+ }
+
+ .two-element{
+    /* background: rgba(25, 26, 35, 0.5);
+    background-repeat: no-repeat;
+    border-radius: 8px; */
+    gap: 1.3rem;
+    flex-direction: column;
+    font-size: 7px;
+    letter-spacing: 2.95937px;
+    color: #8385A9;
+    margin-top: 5.4rem;
+ }
+
+.number {
+    border-radius: 8px;
+    font-size: 36px;
+    line-height: 71px;
+    letter-spacing: -1.08px;
+    color: #cd4d6c;
+    /* color: #FB5E84; */
+    width: 7rem;
+    height: 7.1rem;
+    mix-blend-mode: color-dodge;
+  }
+
+
+.two1{
+    background: rgba(25, 26, 35, 0.5);
+    background-repeat: no-repeat;
+    border-radius: 8px;
+    height: 71px;
+    width: 70px;
+}
+.two{
+    background: radial-gradient(circle at 0 100%, rgba(25, 26, 35, 1) 4px,#2d2f42 0px), 
+    radial-gradient(circle at 100% 100%, rgba(25, 26, 35, 1) 4px, #2d2f42 0px), 
+    radial-gradient(circle at 100% 0, rgba(25, 26, 35, 1) 4px, #343650 0px), 
+    radial-gradient(circle at 0 0, rgba(25, 26, 35, 1) 4px, #343650 0px);
+    background-position: top left, top right, bottom right, bottom left;    
+    backdrop-filter: brightness(0.7);
+    background-size: 50% 50%;
+    background-repeat: no-repeat;
+
+    height: 66.26667022705078px;
+    width: 70px;
+    border-radius: 8px;
+}
+
+
+footer{
+    width: 13.6rem;
+    justify-content: space-between;
+    position: absolute;
+    bottom: 4.8rem;
+}
+
+
+@media only screen and (min-width: 1440px){
+    main{
+        padding-top: 13rem;
+    }
+    .number{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 8rem;
+        line-height: 7.1rem;
+        letter-spacing: -2.08px;
+        width: 14.8rem;
+        height: 15rem;
+    }
+    h1{
+        font-size: 2.2rem;
+        line-height: 2.9rem;
+        letter-spacing:  0.75rem;
+    }
+    .two-element{
+        margin-top: 7rem;
+        gap: 2.6rem;
+        font-size: 1.4rem;
+        letter-spacing: 0.5rem;    
+    }
+
+    .container{  
+        gap: 3.2rem;
+     } 
+     .two1{
+        background: rgba(25, 26, 35, 0.5);
+        background-repeat: no-repeat;
+        border-radius: 8px;
+        height: 15rem;
+        width: 14.8rem;
+    }
+    .two{
+    
+        background: radial-gradient(circle at 0 100%, rgba(25, 26, 35, 1) 9px,#2d2f42 0px), 
+        radial-gradient(circle at 100% 100%, rgba(25, 26, 35, 1) 9px, #2d2f42 0px), 
+        radial-gradient(circle at 100% 0, rgba(25, 26, 35, 1) 9px, #343650 0px), 
+        radial-gradient(circle at 0 0, rgba(25, 26, 35, 1) 9px, #343650 0px);
+        background-position: top left, top right, bottom right, bottom left;    
+        backdrop-filter: brightness(0.7);
+        background-size: 50% 50%;
+        background-repeat: no-repeat;
+    
+        height: 14rem;
+        width: 14.8rem;
+        border-radius: 8px;
+    }   
+}
